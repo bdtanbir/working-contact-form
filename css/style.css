@@ -1,0 +1,52 @@
+*,*:before,*:after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+.messenger-box-form {
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+.messenger-box-form label {
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 14px;
+}
+.messenger-box-form .input-box {
+    margin-bottom: 15px;
+}
+.messenger-box-form textarea,
+.messenger-box-form input {
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.messenger-box-form textarea {
+    height: 80px;
+}
+.messenger-box-form button {
+    background: #238636;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.messenger-box-form button:hover {
+    background: #2fc44d;
+}
+.messenger-box-form input:focus,
+.messenger-box-form textarea:focus,
+.messenger-box-form button:focus {
+    outline: none;
+}

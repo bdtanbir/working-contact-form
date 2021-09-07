@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="TechyDevs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Working Contact Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <form class="row messenger-box-form" method="post" action="mailer.php">
+        <div class="alert alert-success messenger-box-contact__msg col-lg-12" style="display: none" role="alert">
+            Your message was sent successfully.
+        </div>
+        <div class="input-box messenger-box-input-wrap">
+            <label class="label-text" for="name">Your Name</label>
+            <div class="form-group">
+                <span class="la la-user form-icon"></span>
+                <input class="form-control" type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+        </div>
+        <div class="input-box messenger-box-input-wrap">
+            <label class="label-text" for="email">Your Email</label>
+            <div class="form-group">
+                <span class="la la-envelope-o form-icon"></span>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Email address" required>
+            </div>
+        </div>
+        <div class="input-box messenger-box-input-wrap">
+            <label class="label-text" for="message">Message</label>
+            <div class="form-group">
+                <span class="la la-pencil form-icon"></span>
+                <textarea class="message-control form-control" name="message" id="message" placeholder="Write message"
+                    required></textarea>
+            </div>
+        </div>
+        <div class="btn-box messenger-box-input-wrap">
+            <button name="submit" type="submit" class="theme-btn send-message-btn" id="send-message-btn">
+                Send Message
+            </button>
+        </div>
+    </form>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+</body>
+
+</html>
